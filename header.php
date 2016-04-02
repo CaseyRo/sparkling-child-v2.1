@@ -116,11 +116,11 @@
 			ELSEIF ($currentMonth>="06" && $currentMonth<="08")
 			  $thumb = get_stylesheet_directory() . '/img/zomer.jpg';
 			ELSEIF ($currentMonth>="09" && $currentMonth<="11")
-			  $thumb = "http://wattedoeninberlijn.nl/wp-content/uploads/2016/02/herfst.jpg";
+			  $thumb = get_stylesheet_directory() . '/img/herfst.jpg';
 			ELSEIF ($currentMonth>="12" && $currentMonth<="02")
-			  $thumb = "http://wattedoeninberlijn.nl/wp-content/uploads/2016/02/winter.jpg";
+			  $thumb = get_stylesheet_directory() . '/img/winter.jpg';
 			ELSE
-			  $thumb = "http://wattedoeninberlijn.nl/wp-content/uploads/2016/02/winter.jpg";
+			  $thumb = get_stylesheet_directory() . '/img/winter.jpg';
 
 			?>
 			<img src="<?php echo $thumb?>"  style="width:100vw;" alt="<?php bloginfo( 'name' ); ?>"/>
