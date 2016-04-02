@@ -105,7 +105,7 @@
 			        $('#masthead').css('padding-top' , header_height);
 			    } else {
 			        $('#masthead').css('padding-top' , '0');
-			        $('.menunavigation').removeClass('stickynav');
+			        $ ('.menunavigation').removeClass('stickynav');
 			    }*/
 		    }
 		    else 
