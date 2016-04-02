@@ -31,6 +31,14 @@
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon/favicon-16x16.png" sizes="16x16" />
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon/favicon-128.png" sizes="128x128" />
+
+<!-- start using LESS --> 
+<link rel="stylesheet/less" type="text/css" href="<?php echo get_stylesheet_directory_uri()?>/styles.less" />
+<script src="<?php echo get_stylesheet_directory_uri()?>/inc/less.min.js" type="text/javascript"></script>
+<script src="<?php echo get_stylesheet_directory_uri()?>/inc/jquery-2.2.2.min.js" type="text/javascript"></script>
+<!-- END USING LESS -->
+
+
 <meta name="application-name" content="&nbsp;"/>
 <meta name="msapplication-TileColor" content="#FFFFFF" />
 <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri();?>/img/favicon/mstile-144x144.png" />
@@ -77,6 +85,50 @@
 </script>
 <!-- End Hotjar Tracking Code for http://www.wattedoeninberlijn.nl -->
 
+<!--  THIS IS CODE FOR A STICKY HEADER. BE AWARE, THIS WONT DO SHIT WHEN YOU HAVE A LENGTHY MENU! -->
+<script>
+	$window = $(window);
+	$window.scroll(function() {
+
+	  	$scroll_position = $window.scrollTop();
+	  	//console.log($scroll_position);
+	  	$( document ).ready(function() {      
+		    var isMobile = window.matchMedia("only screen and (max-width: 767px)");
+
+		    if (isMobile.matches) {
+		    	/* DO JACK SHIT 
+		        if ($scroll_position > $('#backgroundimage').innerHeight()) {
+			        $('.menunavigation').addClass('stickynav');
+
+			        // to get rid of jerk
+			        header_height = $('.menunavigation').innerHeight();
+			        $('#masthead').css('padding-top' , header_height);
+			    } else {
+			        $('#masthead').css('padding-top' , '0');
+			        $('.menunavigation').removeClass('stickynav');
+			    }*/
+		    }
+		    else 
+		    {
+		    	if ($scroll_position > $('#backgroundimage').innerHeight()) {
+			        $('.menunavigation').addClass('stickynav');
+			        
+			        // to get rid of jerk
+			        //header_height = $('.menunavigation').innerHeight();
+			        header_height = 40;
+			        margin_bottom = -24;
+			        $('#masthead').css('padding-top' , header_height);
+			        $('#masthead').css('margin-bottom' , margin_bottom);
+			    } else {
+			        $('#masthead').css('padding-top' , '0');
+			        $('#masthead').css('margin-bottom' , '0');
+			        $('.menunavigation').removeClass('stickynav');
+			    }
+		    }
+		 });
+	    
+	 });
+</script>
 
 </head>
 
@@ -98,29 +150,18 @@
 
 			<?php 
 
-			//get current month
 			$currentMonth=DATE("m");
 			 
-			
-
-			// testing a new image
-			/*IF ($_GET["template"] == "test")
-				$thumb	= get_stylesheet_directory_uri()."/img/winter.jpg";
-			ELSEIF ($_GET["template"] == "test2")
-				$thumb	= get_stylesheet_directory_uri()."/img/winter2.jpg";*/
-
-			//retrieve season
-
 			IF ($currentMonth>="03" && $currentMonth<="05")
-			  $thumb = get_stylesheet_directory() . '/img/lente.jpg';
+			  $thumb = get_stylesheet_directory_uri() . '/img/lente.jpg';
 			ELSEIF ($currentMonth>="06" && $currentMonth<="08")
-			  $thumb = get_stylesheet_directory() . '/img/zomer.jpg';
+			  $thumb = get_stylesheet_directory_uri() . '/img/zomer.jpg';
 			ELSEIF ($currentMonth>="09" && $currentMonth<="11")
-			  $thumb = get_stylesheet_directory() . '/img/herfst.jpg';
+			  $thumb = get_stylesheet_directory_uri() . '/img/herfst.jpg';
 			ELSEIF ($currentMonth>="12" && $currentMonth<="02")
-			  $thumb = get_stylesheet_directory() . '/img/winter.jpg';
+			  $thumb = get_stylesheet_directory_uri() . '/img/winter.jpg';
 			ELSE
-			  $thumb = get_stylesheet_directory() . '/img/winter.jpg';
+			  $thumb = get_stylesheet_directory_uri() . '/img/winter.jpg';
 
 			?>
 			<img src="<?php echo $thumb?>"  style="width:100vw;" alt="<?php bloginfo( 'name' ); ?>"/>
