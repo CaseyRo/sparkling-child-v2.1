@@ -271,9 +271,7 @@ background-color: #595959;
 }
 @media (max-width: 767px){
   
-  .main-content-area {
-    margin-top: 20px !important;
-  }
+
   .menunavigation .container{
     margin-top:0px !important;
   }
@@ -491,8 +489,7 @@ h6,
 }
 
 img {
-  height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%; /* Adhere to container width. */
+  
 }
 button,
 input,
@@ -565,11 +562,6 @@ textarea {
   display: inline;
   float: right;
   margin-left: 1.5em;
-}
-.aligncenter {
-  clear: both;
-  display: block;
-  margin: 0 auto;
 }
 
 /* Text meant only for screen readers */
@@ -654,10 +646,7 @@ textarea {
   clear: both;
   margin: 0 0 1.5em;
 }
-.main-content-area {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
+
 /* =Post styling
 ----------------------------------------------- */
 .entry-meta a {
@@ -731,12 +720,7 @@ hr.section-divider {
 .blog-item-wrap {
   margin-bottom: 50px;
 }
-.post-inner-content {
-  padding: 45px 50px;
-  background-color: #fff;
-  border: 1px solid #dadada;
-  border-top: none;
-}
+
 .post-inner-content:first-child {
   border-top: 1px solid #dadada;;
 }
@@ -767,11 +751,7 @@ hr.section-divider {
 .page-template-page-fullwidth-php .col-md-8 {
   width: 100%;
 }
-@media(max-width:767px){
-    .post-inner-content {
-        padding: 20px 25px;
-    }
-}
+
 /* =Singe Post/Page Pagination
 ----------------------------------------------- */
 .page-links span {
@@ -927,13 +907,6 @@ object {
 }
 #secondary .widget_recent_comments ul li:before {
   content: '\f0e5';
-}
-.well {
-  background-color: #fff;
-  padding: 30px;
-  border: 1px solid #DADADA;
-  overflow: hidden;
-  clear: both;
 }
 #secondary .widget > h3 {
   font-size: 18px;
@@ -1533,10 +1506,6 @@ p.logged-in-as {
 }
 #footer-area a {
   color: #DADADA;
-}
-#footer-area .footer-widget-area {
-  padding: 40px 0 20px 0;
-  overflow: hidden;
 }
 #footer-area ul li {
   border-bottom: 1px solid #444;
