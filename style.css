@@ -7,10 +7,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
 */
 
-h1.entry-title
-{
-	font-size:24px;
-}
+
 #text-2 > div > a
 {
   color: #78c096 !important;
@@ -421,15 +418,6 @@ background-color: #595959;
 
 /* END OF KEES OVERRIDE */
 
-body {
-  color: #6b6b6b;
-  background-color: #F2F2F2;
-  word-wrap: break-word;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.7;
-  font-size: 14px;
-}
-
 a {
   color: #78c096;
   text-decoration: none;
@@ -649,13 +637,8 @@ textarea {
 
 /* =Post styling
 ----------------------------------------------- */
-.entry-meta a {
-  font-size: 13px;
-  color: #6B6B6B;
-}
-.entry-meta {
-  margin-bottom: 30px;
-}
+
+
 footer.entry-meta {
   margin-bottom: 0;
 }
@@ -882,11 +865,7 @@ object {
 .widget ul.nav.nav-tabs {
   padding: 0;
 }
-#secondary .widget {
-  margin-bottom: 50px;
-  color: #6b6b6b;
-  overflow: hidden;
-}
+
 #secondary .widget:last-child {
   margin-bottom: 0px;
 }
@@ -908,15 +887,7 @@ object {
 #secondary .widget_recent_comments ul li:before {
   content: '\f0e5';
 }
-#secondary .widget > h3 {
-  font-size: 18px;
-  margin-bottom: 25px;
-  margin-top: 0;
-  color: #636467;
-}
-#secondary .widget a {
-  color: #6b6b6b;
-}
+
 .widget ul ul {
   padding: 10px;
 }
@@ -1111,16 +1082,6 @@ button:hover {
 /* =Navigation
 ----------------------------------------------- */
 
-.site-content [class*="navigation"] a {
-  border: 1px solid #DADADA;
-  background-color: #fff;
-  padding: 8px 14px;
-  font-size: 12px;
-  border-radius: 4px;
-  display: block;
-  margin: 0 0 1.5em;
-  overflow: hidden;
-}
 .paging-navigation {
   text-transform: uppercase;
 }
@@ -1136,13 +1097,7 @@ button:hover {
 .single .nav-links {
     margin-top: 30px;
 }
-[class*="navigation"] .nav-previous {
-  float: left;
-}
-[class*="navigation"] .nav-next {
-  float: right;
-  text-align: right;
-}
+
 .nav>li>a {
   text-transform: uppercase;
 }
