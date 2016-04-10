@@ -66,8 +66,9 @@
   ga('send', 'pageview');
 
 </script>
-<script async src="<?php echo get_stylesheet_directory_uri()?>/inc/riveted.min.js"></script>
 
+<script async src="<?php echo get_stylesheet_directory_uri()?>/inc/riveted.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri()?>/inc/jquery-2.2.3.min.js"></script>
 <!-- END OF ANALYTICS --> 
 
 <!-- Hotjar Tracking Code for http://www.wattedoeninberlijn.nl -->
