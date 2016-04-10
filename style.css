@@ -7,10 +7,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sparkling
 */
 
-h1.entry-title
-{
-	font-size:24px;
-}
+
 #text-2 > div > a
 {
   color: #78c096 !important;
@@ -271,9 +268,7 @@ background-color: #595959;
 }
 @media (max-width: 767px){
   
-  .main-content-area {
-    margin-top: 20px !important;
-  }
+
   .menunavigation .container{
     margin-top:0px !important;
   }
@@ -423,15 +418,6 @@ background-color: #595959;
 
 /* END OF KEES OVERRIDE */
 
-body {
-  color: #6b6b6b;
-  background-color: #F2F2F2;
-  word-wrap: break-word;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.7;
-  font-size: 14px;
-}
-
 a {
   color: #78c096;
   text-decoration: none;
@@ -491,8 +477,7 @@ h6,
 }
 
 img {
-  height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%; /* Adhere to container width. */
+  
 }
 button,
 input,
@@ -565,11 +550,6 @@ textarea {
   display: inline;
   float: right;
   margin-left: 1.5em;
-}
-.aligncenter {
-  clear: both;
-  display: block;
-  margin: 0 auto;
 }
 
 /* Text meant only for screen readers */
@@ -654,19 +634,11 @@ textarea {
   clear: both;
   margin: 0 0 1.5em;
 }
-.main-content-area {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
+
 /* =Post styling
 ----------------------------------------------- */
-.entry-meta a {
-  font-size: 13px;
-  color: #6B6B6B;
-}
-.entry-meta {
-  margin-bottom: 30px;
-}
+
+
 footer.entry-meta {
   margin-bottom: 0;
 }
@@ -731,12 +703,7 @@ hr.section-divider {
 .blog-item-wrap {
   margin-bottom: 50px;
 }
-.post-inner-content {
-  padding: 45px 50px;
-  background-color: #fff;
-  border: 1px solid #dadada;
-  border-top: none;
-}
+
 .post-inner-content:first-child {
   border-top: 1px solid #dadada;;
 }
@@ -767,11 +734,7 @@ hr.section-divider {
 .page-template-page-fullwidth-php .col-md-8 {
   width: 100%;
 }
-@media(max-width:767px){
-    .post-inner-content {
-        padding: 20px 25px;
-    }
-}
+
 /* =Singe Post/Page Pagination
 ----------------------------------------------- */
 .page-links span {
@@ -902,11 +865,7 @@ object {
 .widget ul.nav.nav-tabs {
   padding: 0;
 }
-#secondary .widget {
-  margin-bottom: 50px;
-  color: #6b6b6b;
-  overflow: hidden;
-}
+
 #secondary .widget:last-child {
   margin-bottom: 0px;
 }
@@ -928,22 +887,7 @@ object {
 #secondary .widget_recent_comments ul li:before {
   content: '\f0e5';
 }
-.well {
-  background-color: #fff;
-  padding: 30px;
-  border: 1px solid #DADADA;
-  overflow: hidden;
-  clear: both;
-}
-#secondary .widget > h3 {
-  font-size: 18px;
-  margin-bottom: 25px;
-  margin-top: 0;
-  color: #636467;
-}
-#secondary .widget a {
-  color: #6b6b6b;
-}
+
 .widget ul ul {
   padding: 10px;
 }
@@ -1138,16 +1082,6 @@ button:hover {
 /* =Navigation
 ----------------------------------------------- */
 
-.site-content [class*="navigation"] a {
-  border: 1px solid #DADADA;
-  background-color: #fff;
-  padding: 8px 14px;
-  font-size: 12px;
-  border-radius: 4px;
-  display: block;
-  margin: 0 0 1.5em;
-  overflow: hidden;
-}
 .paging-navigation {
   text-transform: uppercase;
 }
@@ -1163,13 +1097,7 @@ button:hover {
 .single .nav-links {
     margin-top: 30px;
 }
-[class*="navigation"] .nav-previous {
-  float: left;
-}
-[class*="navigation"] .nav-next {
-  float: right;
-  text-align: right;
-}
+
 .nav>li>a {
   text-transform: uppercase;
 }
@@ -1533,10 +1461,6 @@ p.logged-in-as {
 }
 #footer-area a {
   color: #DADADA;
-}
-#footer-area .footer-widget-area {
-  padding: 40px 0 20px 0;
-  overflow: hidden;
 }
 #footer-area ul li {
   border-bottom: 1px solid #444;

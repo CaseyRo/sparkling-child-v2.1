@@ -14,35 +14,12 @@
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 			<div class="entry-meta">
-
-				<?php sparkling_posted_on(); ?>
-				
-				<?php
-					/* translators: used between list items, there is a space after the comma */
-					$categories_list = get_the_category_list( __( ', ', 'sparkling' ) );
-					$categorieees = get_the_category();
-
-					//$categories_list = array_diff($categories_lis, array("Featured post"));
-					if ( $categories_list && sparkling_categorized_blog() ) :			
-					?>
-				<!-- – <span class="cat-links"> -->
-					<?php
-					$separator = ', ';
-					$output = '';
-					if($categorieees){
-						foreach($categorieees as $category) {
-							if ($category->name != "Featured post") {
-								$output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
-							}
-						}
-					//echo trim($output, $separator);
-					}
-					// printf( __( ' %1$s', 'sparkling' ), $categories_list ); 
-					?>
-				</span>
-				<?php endif; // End if categories ?>
-				<?php edit_post_link( __( 'Edit', 'sparkling' ), '<i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span>' ); ?>
-
+				<div class="date">
+					<?php the_date(); ?>
+				</div>
+				<div class="category">
+					<?php the_category( ', ' ); ?>
+				</div>
 			</div><!-- .entry-meta -->
 			<h1 class="entry-title "><?php the_title(); ?></h1>
 
