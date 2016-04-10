@@ -33,13 +33,11 @@
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon/favicon-128.png" sizes="128x128" />
 
 <!-- start using LESS --> 
-<link rel="stylesheet/less" type="text/css" href="<?php echo get_stylesheet_directory_uri()?>/styles.less" />
-<script src="<?php echo get_stylesheet_directory_uri()?>/inc/less.min.js" type="text/javascript"></script>
-<script src="<?php echo get_stylesheet_directory_uri()?>/inc/jquery-2.2.2.min.js" type="text/javascript"></script>
-<!-- END USING LESS -->
 
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri();?>/lessstyles.css" />
 
-<meta name="application-name" content="&nbsp;"/>
+<!-- end using LESS --> 
+
 <meta name="msapplication-TileColor" content="#FFFFFF" />
 <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri();?>/img/favicon/mstile-144x144.png" />
 <meta name="msapplication-square70x70logo" content="<?php echo get_stylesheet_directory_uri();?>/img/favicon/mstile-70x70.png" />
@@ -68,8 +66,9 @@
   ga('send', 'pageview');
 
 </script>
-<script async src="<?php echo get_stylesheet_directory_uri()?>/inc/riveted.min.js"></script>
 
+<script async src="<?php echo get_stylesheet_directory_uri()?>/inc/riveted.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri()?>/inc/jquery-2.2.3.min.js"></script>
 <!-- END OF ANALYTICS --> 
 
 <!-- Hotjar Tracking Code for http://www.wattedoeninberlijn.nl -->
